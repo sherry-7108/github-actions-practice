@@ -1,0 +1,28 @@
+
+name: Day 1 CI Practice
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  basic-checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Print a message
+        run: echo "Hello from GitHub Actions"
+
+      - name: Check Linux version
+        run: uname -a
+
+      - name: List files
+        run: ls -la
+
+      - name: Complete pipeline
+        run: echo "Pipeline completed successfully"
