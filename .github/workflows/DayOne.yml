@@ -25,4 +25,4 @@ jobs:
         run: ls -la
 
       - name: Complete pipeline
-        run: echo "Pipeline completed successfully"
+        exit 1
