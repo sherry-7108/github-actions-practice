@@ -2,10 +2,10 @@
 name: Day 1 CI Practice
 
 on:
-  push:
+  workflow_dispatch:
     branches:
       - main
-  workflow_dispatch:
+  
 
 jobs:
   basic-checks:
