@@ -19,7 +19,7 @@ jobs:
         run: echo "Hello from GitHub Actions"
 
       - name: Check Linux version
-        run: uname -a
+        exit 1
 
       - name: List files
         run: ls -la
